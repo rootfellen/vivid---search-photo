@@ -33,17 +33,24 @@ aside {
   display: block;
 }
 
+#root {
+  height: 100%;
+}
+
 html,
 body {
   min-height: 100vh;
+
   width: 100%;
-  overflow: hidden;
   font-size: 100%;
   line-height: 1;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
@@ -92,10 +99,34 @@ h6 {
   font-weight: 400;
 }
 
-/* ======================== Body styles ======================== */
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+.footer {
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__container {
   width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 50%;
+  padding: 1.5rem;
+  border: 0.6px solid #000;
+  border-radius: 12px;
+}
+
+.credentials {
+  font-weight: 500;
+  color: #343a46;
 }
